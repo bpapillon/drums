@@ -1,0 +1,44 @@
+<html>
+<body>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+  div.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -275px;
+    margin-left: -225px;
+    width: 450px;
+    height: 550px;
+  }
+
+  div#visual {
+    height: calc(100% - 100px);
+  }
+
+  div#prompt {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 29pt;
+    border-radius: 10%;
+    box-shadow: 0 0 10px #69b3a2;
+    height: 50px;
+    padding: 25px;
+    width: 400px;
+  }
+
+  div#prompt:hover {
+    cursor: pointer;
+  }
+  </style>
+
+  <div class="container">
+    <div id="visual"></div>
+    <div id="prompt">Give me a loop!</div>
+  </div>
+
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
